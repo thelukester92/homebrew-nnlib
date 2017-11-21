@@ -6,7 +6,7 @@ class Nnlib < Formula
 	head "https://github.com/thelukester92/nnlib.git", :branch => "develop"
 	
 	def install
-		system "make"
+		system "make", "test"
 		system "make", "install", "PREFIX=#{prefix}"
 	end
 end
